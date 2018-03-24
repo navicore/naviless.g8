@@ -17,7 +17,9 @@ libraryDependencies ++=
   Seq(
     "org.typelevel" %% "cats-core" % "1.0.1",
     "com.chuusai" %% "shapeless" % "2.3.2",
-    "io.github.mkotsur" %% "aws-lambda-scala" % "0.0.7"
+    "io.github.mkotsur" %% "aws-lambda-scala" % "0.0.10",
+    
+    "org.scalatest" %% "scalatest" % "3.0.5" % "test"
   )
 
 mainClass in assembly := Some("$package$.Main")
