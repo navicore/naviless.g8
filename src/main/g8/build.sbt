@@ -2,8 +2,8 @@ name := "$name;format="Camel"$"
 
 fork := true
 javaOptions in test ++= Seq(
-  "-Xms512M", "-Xmx2048M",
-  "-XX:MaxPermSize=2048M",
+  "-Xms128M", "-Xmx256M",
+  "-XX:MaxPermSize=256M",
   "-XX:+CMSClassUnloadingEnabled"
 )
 
@@ -16,6 +16,7 @@ ensimeScalaVersion in ThisBuild := "$scalaVersion$"
 
 libraryDependencies ++=
   Seq(
+    "org.typelevel" %% "cats-core" % "1.0.1",
     "com.chuusai" %% "shapeless" % "2.3.2",
     "io.github.mkotsur" %% "aws-lambda-scala" % "0.0.7"
   )
