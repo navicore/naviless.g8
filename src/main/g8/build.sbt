@@ -18,7 +18,7 @@ val monocleVersion = "1.5.0" // 1.5.0-cats based on cats 1.0.x
 libraryDependencies ++=
   Seq(
     "org.typelevel" %% "cats-core" % "1.5.0",
-    "com.chuusai" %% "shapeless" % "2.3.3"
+    "com.chuusai" %% "shapeless" % "2.3.3",
 
     "com.github.julien-truffaut" %%  "monocle-core"  % monocleVersion,
     "com.github.julien-truffaut" %%  "monocle-macro" % monocleVersion,
