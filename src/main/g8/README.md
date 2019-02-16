@@ -1,7 +1,7 @@
 $name$
 -----
 
-$description$
+$desc$
 
 Build and run via:
 ```console
