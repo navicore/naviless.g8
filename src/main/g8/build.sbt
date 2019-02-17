@@ -7,6 +7,8 @@ javaOptions in test ++= Seq(
   "-XX:+CMSClassUnloadingEnabled"
 )
 
+scalacOptions += "-Ypartial-unification"
+
 parallelExecution in test := false
 
 version := "1.0"
@@ -19,6 +21,8 @@ libraryDependencies ++=
     "ch.qos.logback" % "logback-classic" % "1.2.3",
     "com.typesafe" % "config" % "1.3.3",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
+
+    "org.typelevel" %% "cats-core" % "1.6.0",
 
     "org.scalatest" %% "scalatest" % "3.0.5" % "test"
   )
