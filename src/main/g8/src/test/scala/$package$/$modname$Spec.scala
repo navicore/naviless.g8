@@ -1,10 +1,11 @@
 package $package$
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should
 
 import scala.collection.mutable
 
-class $modname$Spec extends FlatSpec with Matchers {
+class $modname$Spec extends AnyFlatSpec with should.Matchers {
 
   "A Stack" should "pop values in last-in-first-out order" in {
     //noinspection ScalaDeprecation
